@@ -13,7 +13,9 @@ get '/secret' do
 end
 
 get '/cat' do
-  '<img src="http://bit.ly/1eze8aE" alt="Cute kitten" style="border:dotted red 35px">'
+  '<div>
+    <img src="http://bit.ly/1eze8aE" alt="Cute kitten" style="border:dotted red 35px">
+  </div>'
 end
 
 set :session_secret, 'super secret'
