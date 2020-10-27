@@ -19,3 +19,4 @@ get '/cat' do
 end
 
 set :session_secret, 'super secret'
+ 
