@@ -13,10 +13,12 @@ get '/secret' do
 end
 
 get '/cat' do
-  '<div>
-    <img src="http://bit.ly/1eze8aE" alt="Cute kitten" style="border:dotted red 35px">
-  </div>'
+  @random_name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/greeting' do
+  erb 'Hi there visitor <% 2 + 2 %>!'
 end
 
 set :session_secret, 'super secret'
- 
